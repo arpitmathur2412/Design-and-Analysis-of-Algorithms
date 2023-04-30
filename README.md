@@ -1,5 +1,5 @@
 # Design and Analysis of Algorithms
 
-#### Divide and Conquer ALgorithms
+#### Divide and Conquer
 #### Greedy Algorithms
 #### Dynamic Programming
