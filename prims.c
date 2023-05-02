@@ -14,21 +14,21 @@ int selected[5]={0};
 
 for(int i=0;i<5;i++){
 
-    while(selected[i]==1){
+    while(selected[i]==1){     // find unselected vertex
         i++;
     }
 
-    selected[i]=1;
+    selected[i]=1;  // mark the vertex as selected
 
     int min=9999;
 
-    for(int j=0;j<5;j++){
-        if(graph[i][j]<min && i!=j && graph[i][j]!=0){
+    for(int j=0;j<5;j++){                   // find minimum edge from all edges for that vertex
+        if(graph[i][j]<min && i!=j && graph[i][j]!=0){                    
             min=graph[i][j];
         }
     }
     printf("min: %d\n",min);
-    for(int k=0;k<5;k++){
+    for(int k=0;k<5;k++){    // set all remaining vertices as 0 after selecting minimum edge
         if(graph[i][k]!=0 && graph[i][k]!=min){
             graph[i][k]=0;
         }
@@ -44,4 +44,4 @@ for(int i=0;i<5;i++){
 }
     
     return 0;
-}
+} 
