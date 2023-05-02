@@ -2,12 +2,17 @@
 
 int main()
 {
-    int p[]={10,20,32};
-    int w[]={5,4,8};
-    int pw[]={2,5,4};
-    int W=6;
+    int p[]={60,100,120};
+    int w[]={10,20,30};
+    int pw[3];
 
-    int weight=0;
+    for(int i=0;i<3;i++){
+        pw[i]=p[i]/w[i];
+    }
+    
+    int W=50;
+
+    int weight=0; 
     int profit=0;
 
     while(weight<W){
