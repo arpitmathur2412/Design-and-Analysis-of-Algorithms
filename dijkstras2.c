@@ -38,7 +38,7 @@ for(int j=0;j<V-1;j++){
             cost[i]=cost[u]+graph[u][i];
             parent[i]=u;
         }
-    }
+    }   
 }
 for(int i=0;i<V;i++){
     printf("%d ",cost[i]);
